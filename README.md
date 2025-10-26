@@ -31,7 +31,8 @@ Flower-Classification/
 ├── 💡 easy.ipynb                  # 简化升级版
 └── 📁 pt/                         # 预训练模型
     ├── resnet18.pt     (66%准确率)
-    ├── resnet50.pt     (99%准确率)
+    ├── resnet50.pt     (75%准确率)
+    ├── resnet50_99%.pt     (99%准确率，采用渐进式训练策略)
     └── resnet152.pt    (40%准确率)
 ```
 
@@ -118,50 +119,23 @@ model.fc = nn.Linear(model.fc.in_features, num_classes)
 
 ## 🎨 可视化界面
 
-![Web界面展示](https://via.placeholder.com/800x400?text=花卉分类识别界面)
-
 **功能特点**：
 - 📷 支持图片上传
 - 🔍 实时识别预测
 - 📈 显示置信度
 - 🎯 Top-5预测结果
 
-## 📈 性能表现
-
-| 模型 | 准确率 | 训练时间 | 推荐指数 |
-|------|--------|----------|----------|
-| ResNet18 | 66% | ⭐⭐ | ⭐⭐⭐ |
-| **ResNet50** | **99%** | ⭐⭐⭐ | **⭐⭐⭐⭐⭐** |
-| ResNet152 | 40% | ⭐⭐⭐⭐ | ⭐⭐ |
-
-## 🔧 核心配置
-
-在 `config.py` 中调整训练参数：
-
-```python
-class TrainingConfig:
-    num_epochs = 25
-    batch_size = 32
-    learning_rate = 0.001
-    feature_extract = True  # 特征提取模式
-    use_pretrained = True   # 使用预训练权重
-```
 
 ## 🐛 问题解决
 
 ### 常见问题
-1. **类别映射错误** ✅ 已修复
+ **类别映射错误** ✅ 已修复
    - 问题：预测标签与文件夹序号不匹配
    - 解决：添加映射校正逻辑
 
-2. **版本兼容警告** ⚠️ 可忽略
-   - 部分警告不影响功能使用
 
-3. **内存溢出** 💡 建议方案
-   - 减小batch_size
-   - 使用梯度累积
 
-## 📚 学习资源
+## 📚 参考资源
 
 - 🎥 [视频教程](https://www.bilibili.com/video/BV1xf421D7iD/)
 - 📖 [技术博客1](https://2048ai.net/682fe90e606a8318e85a0171.html)
@@ -172,22 +146,9 @@ class TrainingConfig:
 欢迎提交Issue和Pull Request！  
 如有问题，请通过以下方式联系：
 
-- 📧 Email: your-email@example.com
+- 📧 Email: 2151156420@qq.com
 - 💬 Issues: [GitHub Issues](https://github.com/diaoyong3777/Flower-Classification/issues)
 
-## 📄 许可证
-
-本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
-
----
-
-<div align="center">
-
-**如果这个项目对您有帮助，请给个⭐Star支持一下！**
-
-[![Star History Chart](https://api.star-history.com/svg?repos=diaoyong3777/Flower-Classification&type=Date)](https://star-history.com/#diaoyong3777/Flower-Classification&Date)
-
-</div>
 
 
 ---
