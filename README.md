@@ -57,7 +57,7 @@ flask
 # 克隆项目
 git clone https://github.com/diaoyong3777/Flower-Classification.git
 cd Flower-Classification
-```bash
+```
 
 ### 2. 数据准备
 - 下载花卉数据集到 `flower_data/` 目录
