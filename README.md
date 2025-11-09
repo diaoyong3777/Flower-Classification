@@ -58,9 +58,6 @@ flask
 git clone https://github.com/diaoyong3777/Flower-Classification.git
 cd Flower-Classification
 
-# 安装依赖（根据需要）
-pip install torch torchvision matplotlib flask pillow
-```
 
 ### 2. 数据准备
 - 下载花卉数据集到 `flower_data/` 目录
