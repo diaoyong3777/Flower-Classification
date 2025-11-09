@@ -42,18 +42,16 @@ Flower-Classification/
 链接：https://www.123865.com/s/idzcjv-4rNzH
 
 
-## 🛠️ 环境要求
+## 🛠️ 本人实验环境(不需要一样)
 
 ```bash
-# 核心依赖
-cuda==12.4
+CUDA==12.4
 python==3.9
 torch==cuda12.4
-
-# 可选工具
 jupyter notebook==6.1.4
 matplotlib
 flask
+...
 ```
 
 ## 🚀 快速开始
