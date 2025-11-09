@@ -156,4 +156,4 @@ model.fc = nn.Linear(model.fc.in_features, num_classes)
 
 ---
 
-*最后更新: 2024年12月*
+*最后更新: 2025年11月*
