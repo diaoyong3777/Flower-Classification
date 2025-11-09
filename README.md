@@ -2,6 +2,8 @@
 
 一个基于深度学习的花卉图像分类项目，使用PyTorch和预训练的ResNet模型，能够准确识别102种不同花卉品种。
 
+【注：原教程是jupyter文件，本人将功能拆分成python文件并扩展了应用】
+
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-CUDA%2012.4-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
@@ -36,6 +38,10 @@ Flower-Classification/
     └── resnet152.pt    (40%准确率)
 ```
 
+『来自123云盘VIP会员15228297835的分享』花卉分类pt文件
+链接：https://www.123865.com/s/idzcjv-4rNzH
+
+
 ## 🛠️ 环境要求
 
 ```bash
@@ -69,7 +75,7 @@ cd Flower-Classification
 ```bash
 python gradual_train.py
 ```
-**特点**：逐层解冻训练，达到98%+准确率
+**特点**：逐层解冻训练，达到98%+准确率【还可以后续接着训练进一步提升】
 
 #### 方案二：分阶段训练
 ```bash
