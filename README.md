@@ -32,17 +32,12 @@ Flower-Classification/
 ├── 📓 main.ipynb                  # 完整项目流程
 ├── 💡 easy.ipynb                  # 简化升级版
 └── 📁 pt/                         # 预训练模型
-    ├── resnet18.pt     (66%准确率)
-    ├── resnet50.pt     (75%准确率)
     ├── resnet50_99%.pt     (99%准确率，采用渐进式训练策略)
-    └── resnet152.pt    (40%准确率)
+
 ```
 
-『来自123云盘VIP会员15228297835的分享』花卉分类pt文件
-链接：https://www.123865.com/s/idzcjv-4rNzH
 
-
-## 🛠️ 本人实验环境(不需要一样)
+## 🛠️ 本人实验环境(不需要完全一样)
 
 ```bash
 CUDA==12.4
